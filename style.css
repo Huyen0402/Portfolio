@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--main-white);
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 66px;
+    background-color: var(--main-red);
+    z-index: 10;
+}
+
+#nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 66px;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    padding-right: 20px;
+}
+
+#nav ul {
+    
+}
+
+#nav li {
+    display: inline-block;
+    justify-content: flex-end;
+}
+
+#nav li a {
+    display: inline-block;;
+    line-height: 66px;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+#nav li:hover a {
+    background-color: var(--main-blue);
+}
+
+#slider {
+    padding-top: 66px;
+    width: 100%;
+    height: 780px;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider h1 {
+    font-size: 58px;
+    line-height: 80px;
+}
+
+#slider p {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 100;
+    color: var(--main-red);
+}
+
+#content {
+    background-color: var(--main-blue);
+    /* display: flex;
+    flex-flow: column;
+    align-items: center; */
+    text-align: center;
+    padding: 96px 20px 96px 20px;
+    
+}
+
+.title {
+    max-width: 780px;
+    margin: 0 auto 58px auto;
+    border-bottom: 2px var(--main-white) solid;
+    text-align: center;
+    font-size: 25px;
+    line-height: 80px;
+}
+
+
+
+.projects {
+    text-align: center;
+}
+
+.projects div{
+    display: flex;
+}
+
+.project {
+    background-color: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    width: 33.33%;
+    margin: 20px;
+}
+
+
+.project-image {
+    height: calc(100% - 66px);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    line-height: 66px;
+    font-size: 20px;
+}
+
+.code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+    color: #ff7f50;
+}
+
+.show-all-link {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-size: 20px;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+}
+
+.show-all-link:hover {
+    background: var(--main-red);
+}
+  
+.show-all-link:hover > i {
+    transform: translateX(2px);
+}
+  
+.show-all-link > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+
+/*Contact*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 787px;
+    background-color: var(--main-gray);
+    padding: 0 20px;
+}
+
+.contact-header > h2 {
+    font-size: 58px;
+}
+
+.contact-header p {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact-links > * + * {
+    margin-left: 40px;
+}
+
+.btn-contact-link {
+    font-size: 24px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.btn-contact-link:hover {
+    transform: translateY(8px);
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 124px;
+    padding: 20px;
+    font-weight: 350;
+    background-color: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+}
+
+#footer p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+#footer i {
+    vertical-align: middle;
+    text-decoration: underline;
+}
